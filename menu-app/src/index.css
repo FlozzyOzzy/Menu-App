@@ -1,0 +1,93 @@
+.title{
+  text-align: center;
+  font-family:'Franklin Gothic Medium';
+  font-size: 2.2rem;
+}
+.title-underline{
+  width: 7rem;
+  height: 0.25rem;
+  margin: 0 auto;
+  margin-top: 0.5rem;
+  background-color: black;
+}
+.menu{
+  padding: 2rem 0;
+  background-color: rgb(231, 231, 231);
+}
+.btn-container{
+  margin: 2.5rem 0 3rem 0 ;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.category-btn{
+  background-color: #F5F5DC;
+  font-size: 1rem;
+  padding: auto;
+  border-radius: 5px;
+  font-family:'Franklin Gothic Medium';
+}
+.section-center{
+  width: 90vw;
+  margin: 0 auto;
+  display: grid;
+  max-width: 100%;
+  gap: 2rem;
+  justify-items: center;
+}
+.menu-item{
+  background-color: rgb(218, 216, 216);
+  border-radius: 20px;
+  width: 100%;
+  max-width: 25rem;
+}
+.menu-img{
+  height: 15rem;
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.item-info{
+  padding: 1.5rem;
+}
+.item-info header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+.item-info h5{
+  font-family: 'Franklin Gothic Medium';
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+.item-price{
+  background-color: #F5F5DC;
+  font-size: 1rem;
+  font-family:'Franklin Gothic Medium';
+  letter-spacing: normal;
+  padding: 0.25rem 0.5rem;
+  border-radius: 10px;
+}
+.item-text{
+  font-size: 1rem;
+  font-family:'Franklin Gothic Medium';
+  line-height: 2;
+  color: rgb(92, 92, 92);
+}
+
+@media screen and (min-width: 992px){
+  .section-center{
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+  }
+}
+@media screen and (min-width: 1170px){
+  .section-center{
+    width: 95vw;
+    grid-template-columns:repeat(3, 1fr);
+  }
+}
